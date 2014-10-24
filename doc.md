@@ -47,6 +47,20 @@ API の利用に際し認証や開発者登録等は必要ありませんが、�
 | day_one       | 1日目参加企画の場合は true                    |
 | day_two       | 2日目参加企画の場合は true                    |
 
+#### 例
+
+##### `GET /search/api/projects?keyword=ITF`
+
+企画名、企画説明、企画運営団体のいずれかに ITF を含むすべての企画情報を配列として返す。
+
+##### `GET /search/api/projects?keyword=ITF&does_cook=false&day_one=true`
+
+下記の条件をすべて満たす企画の情報を配列として返す。
+
+- 企画名、企画説明、企画運営団体のいずれかに ITF を含む
+- 調理企画でない
+- 一日目に参加 (実施) する
+
 ## 参考
 
 ### 企画実施エリア ID 対応表
